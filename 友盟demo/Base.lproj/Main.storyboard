@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enU-py-WfU">
+                                <rect key="frame" x="90" y="105" width="195" height="30"/>
+                                <state key="normal" title="qq"/>
+                                <connections>
+                                    <action selector="qq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KK6-6n-8xN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jc-F3-V49">
+                                <rect key="frame" x="90" y="164" width="195" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="ZSh-Ee-12d"/>
+                                    <constraint firstAttribute="height" constant="30" id="f9M-9w-665"/>
+                                </constraints>
+                                <state key="normal" title="微博"/>
+                                <connections>
+                                    <action selector="weibo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xKx-Nq-grf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjD-ey-URH">
+                                <rect key="frame" x="90" y="43" width="195" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="4AT-1C-Iw9"/>
+                                    <constraint firstAttribute="height" constant="30" id="iGt-qI-aKC"/>
+                                </constraints>
+                                <state key="normal" title="微信"/>
+                                <connections>
+                                    <action selector="wechat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rnn-oz-C3w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycF-6I-rM6">
+                                <rect key="frame" x="89" y="246" width="197" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="U4D-jL-uJq"/>
+                                    <constraint firstAttribute="width" constant="197" id="hED-ug-IsL"/>
+                                </constraints>
+                                <state key="normal" title="朋友圈"/>
+                                <connections>
+                                    <action selector="circle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cnr-f5-RYA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQl-uY-O4H">
+                                <rect key="frame" x="89" y="302" width="197" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4ii-1L-ogD"/>
+                                    <constraint firstAttribute="width" constant="197" id="rhM-Gr-crv"/>
+                                </constraints>
+                                <state key="normal" title="qq空间"/>
+                                <connections>
+                                    <action selector="kj:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hUE-N9-tqj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHa-nW-374">
+                                <rect key="frame" x="92" y="397" width="191" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YhY-gQ-Q99"/>
+                                    <constraint firstAttribute="width" constant="191" id="au5-3G-2eO"/>
+                                </constraints>
+                                <state key="normal" title="所有"/>
+                                <connections>
+                                    <action selector="all:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7oc-S2-GhQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DjD-ey-URH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="1qY-Yq-hrj"/>
+                            <constraint firstItem="5Jc-F3-V49" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1vo-Hp-KHu"/>
+                            <constraint firstItem="eHa-nW-374" firstAttribute="top" secondItem="LQl-uY-O4H" secondAttribute="bottom" constant="65" id="2Q2-Bt-Xjt"/>
+                            <constraint firstItem="enU-py-WfU" firstAttribute="height" secondItem="DjD-ey-URH" secondAttribute="height" id="4HX-2f-xJh"/>
+                            <constraint firstItem="ycF-6I-rM6" firstAttribute="top" secondItem="5Jc-F3-V49" secondAttribute="bottom" constant="52" id="8zR-GL-3oj"/>
+                            <constraint firstItem="enU-py-WfU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ASf-jg-O1V"/>
+                            <constraint firstItem="enU-py-WfU" firstAttribute="width" secondItem="DjD-ey-URH" secondAttribute="width" id="Drp-Bq-sSp"/>
+                            <constraint firstItem="eHa-nW-374" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GcF-hV-L57"/>
+                            <constraint firstItem="5Jc-F3-V49" firstAttribute="top" secondItem="enU-py-WfU" secondAttribute="bottom" constant="29" id="IlR-4X-tEA"/>
+                            <constraint firstItem="LQl-uY-O4H" firstAttribute="top" secondItem="ycF-6I-rM6" secondAttribute="bottom" constant="26" id="T6r-2a-H4l"/>
+                            <constraint firstItem="LQl-uY-O4H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VBB-Sy-Xmy"/>
+                            <constraint firstItem="enU-py-WfU" firstAttribute="top" secondItem="DjD-ey-URH" secondAttribute="bottom" constant="32" id="X4a-8H-Vvz"/>
+                            <constraint firstItem="DjD-ey-URH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bkq-YV-NrT"/>
+                            <constraint firstItem="ycF-6I-rM6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hCd-NA-5Xd"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.5" y="233.5"/>
+        </scene>
+    </scenes>
+</document>
